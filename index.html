@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25 Años de Amor | Boda de Plata</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-plata: #c0c0c0;
+      --color-beige: #f5f0e8;
+      --color-blanco: #ffffff;
+      --color-texto: #555555;
+      --sombra: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--color-texto);
+      background-color: var(--color-blanco);
+      line-height: 1.7;
+    }
+    
+    /* Estilos para cada sección con posicionamiento preciso */
+    .hero-section {
+      height: 100vh;
+      background: url('https://media.istockphoto.com/id/1133873119/es/foto/configuraci%C3%B3n-de-tabla-para-un-evento.jpg?s=612x612&w=0&k=20&c=fI8flaYgiSLjFKutvTmiiBtX1wsJzunt3wMlausGTTQ=') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .couple-section {
+      min-height: 100vh;
+      background: url('https://media.istockphoto.com/id/2160153139/es/foto/vip-luxury-table-setting-close-up.jpg?s=612x612&w=0&k=20&c=kdJFzjswl61tNnpaYnXYsl41YVf7WYG0zmtMZNV0pZE=') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .gallery-section {
+      min-height: 100vh;
+      background: url('https://media.istockphoto.com/id/1218578391/es/foto/un-par-de-anillos-de-boda-de-oro-sobre-p%C3%A9talos-de-flores-de-peon%C3%ADa-rosa-sobre-un-fondo-blanco.jpg?s=612x612&w=0&k=20&c=jzTp-vAC6M6dyOxrqnk73E7Tepnds5ZCWpJXDg1ofck=') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .details-section {
+      min-height: 100vh;
+      background: url('https://media.istockphoto.com/id/1159759311/es/vector/hermoso-marco-de-borde-de-lirio-blanco-y-negro-ramo-de-flores-estampado-floral-dibujo-de.jpg?s=612x612&w=0&k=20&c=xJVSLwt97nCQ-vm4d__3ZdsELQeygFaqHOpnuncbxHc=') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .rsvp-section {
+      min-height: 100vh;
+      background: url('https://media.istockphoto.com/id/884443104/es/foto/navidad-flor-de-pascua-plateado-flor-y-cinta-en-blanco-de-madera-placa-espacio-de-copia.jpg?s=612x612&w=0&k=20&c=PBegffHvIu6RDbAWX1OKy_wW_E2VjattyJiaiS03TAM=') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative;
+    }
+    
+    .text-box {
+      background-color: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--color-plata);
+      border-radius: 8px;
+      padding: 40px;
+      box-shadow: var(--sombra);
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .floral-box {
+      background-image: url('https://media.istockphoto.com/id/921578444/es/foto/patr%C3%B3n-de-flores-peque%C3%B1o.jpg?s=612x612&w=0&k=20&c=HqX6uId4sIJQgoJ8AFxKuKND2TvebV93fGGr1QdKhrA=');
+      background-size: 300px;
+      background-position: center;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    
+    .tattoo-frame {
+      border: 15px solid transparent;
+      border-image: url('https://media.istockphoto.com/id/1148840006/es/vector/negro-tinta-tatuaje-mano-dibujado-marco.jpg?s=612x612&w=0&k=20&c=wTq-I2BmHQbupep6TyKv8kuYid0WQgvyY_TWBqeJQYQ=') 30 round;
+      padding: 30px;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: var(--color-texto);
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    h1::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 1px;
+      background: var(--color-plata);
+    }
+    
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 1px;
+      background: var(--color-plata);
+    }
+    
+    .couple-name {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: var(--color-texto);
+      text-align: center;
+      font-weight: 400;
+    }
+    
+    .date-badge {
+      background-color: var(--color-blanco);
+      color: var(--color-texto);
+      border: 1px solid var(--color-plata);
+      border-radius: 50px;
+      padding: 12px 30px;
+      display: inline-block;
+      font-weight: 600;
+      margin-top: 30px;
+      box-shadow: var(--sombra);
+      font-size: 1.1rem;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+    
+    .gallery-item {
+      background: var(--color-blanco);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--sombra);
+      transition: transform 0.3s ease;
+      border: 1px solid var(--color-plata);
+      position: relative;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .gallery-caption {
+      padding: 20px;
+      text-align: center;
+      font-style: italic;
+      color: var(--color-texto);
+      background-color: var(--color-blanco);
+    }
+    
+    .details-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+    
+    .details-item {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: var(--sombra);
+      border: 1px solid var(--color-plata);
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .details-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://media.istockphoto.com/id/478903292/es/foto/s%C3%ADmbolos-de-amor-y-compromiso.jpg?s=612x612&w=0&k=20&c=NLvXidFYZvNruGVaJDxXVGkvJ20_rNLJBQrIB3FeQN4=') center/cover no-repeat;
+      opacity: 0.1;
+      z-index: 1;
+    }
+    
+    .details-item > * {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .details-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .details-item h3 {
+      color: var(--color-texto);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    
+    .details-item p {
+      color: var(--color-texto);
+      font-size: 1rem;
+    }
+    
+    .rsvp-button {
+      display: inline-block;
+      background: var(--color-blanco);
+      color: var(--color-texto);
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 30px;
+      transition: all 0.3s ease;
+      border: 1px solid var(--color-plata);
+      box-shadow: var(--sombra);
+    }
+    
+    .rsvp-button:hover {
+      background: var(--color-plata);
+      color: var(--color-blanco);
+      transform: translateY(-3px);
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .mb-30 {
+      margin-bottom: 30px;
+    }
+    
+    .map-link {
+      color: var(--color-texto);
+      text-decoration: none;
+      border-bottom: 1px dashed var(--color-plata);
+      transition: all 0.3s ease;
+    }
+    
+    .map-link:hover {
+      color: var(--color-plata);
+      border-bottom: 1px dashed var(--color-texto);
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      
+      .couple-name {
+        font-size: 1.8rem;
+      }
+      
+      .text-box {
+        padding: 30px 20px;
+        width: 90%;
+      }
+      
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .gallery-item img {
+        height: 280px;
+      }
+      
+      .details-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .tattoo-frame {
+        border-width: 10px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="text-box floral-box">
+        <h1>25 Años de Amor</h1>
+        <p class="couple-name">Santos Eliseo & Norma Leticia</p>
+        <p>Celebrando un cuarto de siglo de felicidad compartida</p>
+        <div class="date-badge">30 de Agosto 2025</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="couple-section">
+    <div class="container">
+      <div class="text-box tattoo-frame">
+        <h2>Nuestra Historia</h2>
+        <p>El 30 de agosto de 1998 comenzó esta hermosa aventura que hoy celebramos con alegría.</p>
+        <p>25 años llenos de amor, risas, desafíos superados y momentos inolvidables que han tejido 
+          la historia de nuestra familia.</p>
+        <p>Hoy queremos compartir con ustedes esta celebración tan especial, porque cada uno de 
+          ustedes ha sido parte importante de nuestro camino.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="text-box">
+        <h2>Nuestros Momentos</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="f5a6908d-7235-478b-923f-7dea9ece4645.jpg" alt="Boda original" style="object-position: center 30%;">
+            <div class="gallery-caption">El día que todo comenzó - 2000</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://drive.google.com/uc?export=view&id=1n8OapTA0UhMEKWrSkDAR1yfBmyUWo2T-" alt="Familia" style="object-position: center 40%;">
+            <div class="gallery-caption">Construyendo nuestra familia</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://drive.google.com/uc?export=view&id=1n4esMO3JhIc-h8dCPG0Kv1XIlBRR5Tmu" alt="Actualidad" style="object-position: center 30%;">
+            <div class="gallery-caption">25 años después, más unidos que nunca</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="details-section">
+    <div class="container">
+      <div class="text-box">
+        <h2>Detalles del Evento</h2>
+        <div class="details-container">
+          <div class="details-item">
+            <h3>Ceremonia</h3>
+            <p>30 de agosto</p>
+            <p>5:00 PM</p>
+          </div>
+         
+          <div class="details-item">
+            <h3>Recepción</h3>
+            <p><a href="https://maps.app.goo.gl/7ni8rodwSwP5HdT88" class="map-link">Quinta El Frison</a></p>
+            <p>7:00 PM - 12:00 AM</p>
+            <p>Cena y baile</p>
+          </div>
+          
+          <div class="details-item">
+            <h3>Entretenimiento</h3>
+            <p>8:00 PM - Efecto Cumbianbero</p>
+            <p>10:00 PM - Ley de Monterrey</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rsvp-section">
+    <div class="container">
+      <div class="text-box floral-box text-center">
+        <h2>Confirma tu Asistencia</h2>
+        <p class="mb-30">Nos encantaría compartir este momento tan especial contigo</p>
+        <p>Por favor confirma antes del 15 de agosto</p>
+        <a href="mailto:bodadeplata@ejemplo.com?subject=Confirmación de asistencia" class="rsvp-button">CONFIRMAR AHORA</a>
+        <p style="margin-top: 30px;">Teléfono: 812-000-5815</p>
+      </div>
+    </div>
+  </section>  
+
+</body>
+</html>
